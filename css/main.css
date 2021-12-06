@@ -378,6 +378,10 @@ img {
   display: block;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 /* montserrat-regular - latin-ext_latin_cyrillic */
 @font-face {
   font-family: 'Montserrat';
@@ -429,6 +433,9 @@ img {
 
 .leftHeader__item {
   margin-bottom: 12px;
+}
+
+.leftHeader__link {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -436,9 +443,82 @@ img {
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
+  color: #000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.leftHeader__link:hover {
+  color: red;
+}
+
+.leftHeader__link::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-image: url("../../img/logoGV.svg");
+  background-position: 0 0;
+  background-size: contain;
+  position: absolute;
+  left: -15px;
 }
 
 .leftHeader .active {
   color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.leftHeader .active::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/logoGV.svg");
+  background-position: 0 0;
+  background-size: contain;
+  position: absolute;
+  left: -15px;
+}
+
+.leftHeader__otdel {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 37px;
+}
+
+.leftHeader__address {
+  margin-top: 15px;
+  font-style: normal;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+  margin-left: 30px;
+}
+
+.leftHeader__address::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-image: url("../../img/location.png");
+  background-position: 0 0;
+  background-size: contain;
+  position: absolute;
+  left: -35px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

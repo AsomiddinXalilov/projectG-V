@@ -10,12 +10,11 @@
         margin-bottom: 48px;
     }
 
-    &__list {
-        
-    }
-
     &__item {
         margin-bottom: 12px;
+    }
+
+    &__link {
         font-family: "Montserrat", "Arial", sans-serif;
         font-size: 16px;
         font-style: normal;
@@ -23,14 +22,78 @@
         line-height: 20px;
         letter-spacing: 0em;
         text-align: left;
+        color: #000;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &__link:hover {
+        color: red;
+    }
+
+    &__link::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-image: url("../../img/logoGV.svg");
+        background-position: 0 0;
+        background-size: contain;
+        position: absolute;
+        left: -15px;
     }
 
     .active {
         color: red;
+        display: flex;
+        align-items: center;
+        position: relative;
     }
 
-    .active: {
+    .active::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-image: url("../img/logoGV.svg");
+        background-position: 0 0;
+        background-size: contain;
+        position: absolute;
+        left: -15px;
+    }
 
+    &__otdel {
+        font-family: "Montserrat", "Arial", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 37px;
+    }
+
+    &__address {
+        margin-top: 15px;
+        font-style: normal;
+        font-family: "Montserrat", "Arial", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        position: relative;
+        margin-left: 30px;
+    }
+
+    &__address::before {
+        content: "";
+        width: 22px;
+        height: 22px;
+        background-image: url("../../img/location.png");
+        background-position: 0 0;
+        background-size: contain;
+        position: absolute;
+        left: -35px;
+        cursor: pointer;
     }
 
 }
