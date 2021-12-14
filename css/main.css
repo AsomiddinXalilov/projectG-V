@@ -420,6 +420,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .leftHeader {
   max-width: 260px;
+  position: fixed;
 }
 
 .leftHeader__box {
@@ -497,7 +498,16 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .leftHeader__address {
+  position: relative;
+  margin-left: 30px;
   margin-top: 15px;
+}
+
+.leftHeader__text {
+  margin-bottom: 20px;
+}
+
+.leftHeader__links {
   font-style: normal;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
@@ -506,19 +516,61 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
-  position: relative;
-  margin-left: 30px;
+  color: #000;
+  margin-bottom: 20px;
 }
 
 .leftHeader__address::before {
   content: "";
   width: 22px;
   height: 22px;
-  background-image: url("../../img/location.png");
+  background-image: url("../../img/lication.svg");
   background-position: 0 0;
   background-size: contain;
   position: absolute;
   left: -35px;
   cursor: pointer;
+}
+
+.leftHeader__linkses {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+  position: relative;
+}
+
+.leftHeader__linkses::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-image: url("../../img/phoneicon.svg");
+  background-position: 0 0;
+  background-size: contain;
+  position: absolute;
+  left: -35px;
+  cursor: pointer;
+}
+
+.leftHeader__linkss {
+  display: block;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #E31E24;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.leftHeader__ins {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */
